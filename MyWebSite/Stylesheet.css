@@ -55,7 +55,7 @@ padding: 0px 20px;
 
 button{
     padding: 9px 25px;
-    background-color: rgba(0, 135, 169, 1);
+    background: linear-gradient(90deg, rgba(116,62,0,1) 0%, rgba(255,141,0,1) 50%, rgba(116,62,0,1) 100%);
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -63,7 +63,7 @@ button{
 }
 
 button:hover{
-    background-color: rgba(0, 135, 169, 0.8);
+    background: linear-gradient(90deg, rgba(255,105,0,1) 0%, rgba(255,136,0,1) 50%, rgba(255,105,0,1) 100%);
 }
 
 .btn{
@@ -80,6 +80,69 @@ button:hover{
     cursor: pointer;
 }
 .btn:hover {opacity: 0.5}
+
+#wrapper{
+margin-top: 100px;
+position: relative;
+overflow: hidden;
+}
+
+#top{
+    height: 40vh;
+    background-color: rgba(132, 0, 255, 0.137);
+    border: 2px solid #4d00b3;
+}
+
+#secondtop{
+    height: 40vh;
+    background-color: rgba(0, 204, 255, 0.137);
+    border: 2px solid #00b3a4;
+}
+
+#thirdtop{
+    height: 40vh;
+    background-color: rgba(255, 72, 0, 0.137);
+    border: 2px solid #ff5e00;
+}
+
+#forthtop{
+    height: 40vh;
+    background-color: rgba(122, 35, 0, 0.137);
+    border: 2px solid #ff5e00;
+}
+
+#fithtop{
+    height: 40vh;
+    background-color: rgba(0, 255, 255, 0.137);
+    border: 2px solid #00ffff;
+}
+
+#sixtop{
+    height: 40vh;
+    background-color: rgba(251, 255, 0, 0.137);
+    border: 2px solid #e5ff00;
+}
+
+#seventop{
+    height: 40vh;
+    background-color: rgba(0, 47, 255, 0.137);
+    border: 2px solid #0004ff;
+}
+
+
+#topinfo{
+    height: 40vh;
+    overflow: hidden;
+    width: 30vw;
+}
+
+#right{
+    text-align: right;
+    margin-top: 100px;
+    height: 3240px;
+    width: 50%;
+    float: right;
+}
 
 #home{
     margin-left: 10px;
@@ -102,11 +165,23 @@ button:hover{
     background-image: url("./img/Darker\ wood.jpg");
 }
 
+#middleee{
+    height: 400vh;
+    display: flex;
+    background-image: url("./img/Darker\ wood.jpg");
+}
+
+#download{
+    margin-left: 275px;
+    background: rgb(52,28,0);
+    background: linear-gradient(90deg, rgba(52,28,0,1) 0%, rgba(255,141,0,1) 50%, rgba(92,51,0,1) 100%);
+}
+
 #myself{
     height: 300px;
     margin-left: 150px;
     margin-top: 20px;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 h1{
@@ -141,6 +216,17 @@ h1{
 
 #boxone{
     height: 1050px;
+    margin: 0px 50px 0px 50px;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    border-radius: 20px;
+    box-shadow: 0 0 8px 8px rgb(0, 0, 0);
+    backdrop-filter: blur(0.6px);
+}
+
+#boxonee{
+    height: 395vh;
     margin: 0px 50px 0px 50px;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.5);
@@ -201,17 +287,56 @@ p{
     display: inline-block;
     margin-right: 0px; 
     color: white;
+    margin-left: 240px;
+    padding-bottom: 20px;
 }
 
 #anim{
     display: inline-block;
     margin-left: 1000px;
     color: white;
+    margin-left: 1000px;
+    padding-bottom: 20px;
+}
+
+#blendericon{
+    height: 500px;
+    margin-left: 20px;
+    margin-top: 40vh;
+}
+
+#csharpicon{
+    height: 35vh;
+    margin-left: 5vw;
+    float: left;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+}
+
+#sqlicon{
+    height: 35vh;
+    margin-left: 5vw;
+    float: left;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+}
+
+#giticon{
+    height: 35vh;
+    margin-left: 5vw;
+    float: left;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
 }
 
 h2{
-    margin-left: 240px;
+    color: white;
+}
+
+#seperatedtext{
+    margin-left: 120px;
     padding-bottom: 20px;
+    color: white;
 }
 
 hr{
@@ -309,3 +434,77 @@ hr{
     padding-left: 5px;
 }
 
+#csharpnifotextheader{
+    padding: 20px;
+    font-size: 40px;
+}
+
+#csharpnifotext{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+  }
+  .loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #242f3f;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+  }
+  .loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+  }
+  
+  @keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+  }
+  
+  @keyframes loader-inner {
+    0% { height: 0%;}
+    25% { height: 0%;}
+    50% { height: 100%;}
+    75% { height: 100%;}
+    100% { height: 0%;}
+  }
+
+  #tip{
+      margin-left: 10px;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: bold;
+  }
